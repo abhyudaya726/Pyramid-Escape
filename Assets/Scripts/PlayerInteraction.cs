@@ -9,8 +9,10 @@ public class PlayerInteraction : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI interactionPrompt;
+    [SerializeField] private UnityEngine.UI.Image crosshair;
 
     private Camera mainCamera;
+    private IInteractable currentInteractable;
 
     private void Awake()
     {
@@ -21,10 +23,7 @@ public class PlayerInteraction : MonoBehaviour
             Debug.LogError("PlayerInteraction: Main Camera not found!");
         }
 
-        if (interactionPrompt != null)
-        {
-            interactionPrompt.gameObject.SetActive(false);
-        }
+        HidePrompt();
     }
 
     private void Update()
@@ -32,12 +31,13 @@ public class PlayerInteraction : MonoBehaviour
         if (mainCamera == null)
             return;
 
-        CheckForInteraction();
+        FindInteractable();
+        HandleInteraction();
     }
 
-    private void CheckForInteraction()
+    private void FindInteractable()
     {
-        HidePrompt();
+        currentInteractable = null;
 
         Ray ray = new Ray(
             mainCamera.transform.position,
@@ -50,18 +50,38 @@ public class PlayerInteraction : MonoBehaviour
             interactionDistance,
             interactionLayer))
         {
-            IInteractable interactable =
-                hit.collider.GetComponent<IInteractable>();
+            currentInteractable =
+                hit.collider.GetComponentInParent<IInteractable>();
+        }
 
-            if (interactable != null)
+        if (currentInteractable != null)
+        {
+            ShowPrompt();
+
+            if (crosshair != null)
             {
-                ShowPrompt();
-
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    interactable.Interact();
-                }
+                crosshair.transform.localScale = Vector3.one * 1.5f;
             }
+        }
+        else
+        {
+            HidePrompt();
+
+            if (crosshair != null)
+            {
+                crosshair.transform.localScale = Vector3.one;
+            }
+        }
+    }
+
+    private void HandleInteraction()
+    {
+        if (currentInteractable == null)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            currentInteractable.Interact();
         }
     }
 
