@@ -7,12 +7,11 @@ public class ThirdPersonCamera : MonoBehaviour
 
     [Header("Camera Settings")]
     [SerializeField] private float distance = 5f;
-    [SerializeField] private float height = 1f;
     [SerializeField] private float sensitivity = 150f;
 
     [Header("Camera Smoothing")]
-    [SerializeField] private float positionSmoothSpeed = 12f;
-    [SerializeField] private float rotationSmoothSpeed = 12f;
+    [SerializeField] private float positionSmoothSpeed = 20f;
+    [SerializeField] private float rotationSmoothSpeed = 20f;
 
     [Header("Vertical Limits")]
     [SerializeField] private float minPitch = -20f;
@@ -63,7 +62,6 @@ public class ThirdPersonCamera : MonoBehaviour
             targetPosition +
             orbitRotation * new Vector3(0f, 0f, -distance);
 
-        // Smooth camera position without excessive lag
         transform.position = Vector3.Lerp(
             transform.position,
             desiredPosition,
