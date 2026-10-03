@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 39400cef9c77a55469a56cb1ec8859fe
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom
+    second: {fileID: 2100000, guid: 9d49c3c58cbc4a44f857ec284b114974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ancient Ornamental Fabric Pattern
+    second: {fileID: 2100000, guid: 7f33462746bdf9f458c7d702203b9179, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ancient Parchment Paper
+    second: {fileID: 2100000, guid: 3e5b19b5d2eee7843b414ddfcfb5a7bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ancient Rune Gold
+    second: {fileID: 2100000, guid: 746075e2a2aa84044a5cee3130f77167, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ancient Rune Metal Red
+    second: {fileID: 2100000, guid: 90ff6de58b98b504c8499351e5526049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ancient Tiles
+    second: {fileID: 2100000, guid: 34e4dac1d19c540459940da40961f193, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box 05
+    second: {fileID: 2100000, guid: 6bbacf6ef16bd85488bacd4f70530eec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Castle Stone Bricks Wall
+    second: {fileID: 2100000, guid: 672aa8b0131a2c14ab2c4bde53a34476, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1
+    second: {fileID: 2100000, guid: 53a3158c0064ccd4cbdde7eb55d078dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.001
+    second: {fileID: 2100000, guid: b1474eca176ee84468ad8d8afd080703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.002
+    second: {fileID: 2100000, guid: b0bfc719ec7c9fd42955ff9f9469c6ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.003
+    second: {fileID: 2100000, guid: b7a61f023823e174eb499f72aaeb7281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.004
+    second: {fileID: 2100000, guid: 19f806f15ce58ed44bb1c0ea34a1b497, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.005
+    second: {fileID: 2100000, guid: 0c42796a7ef73ba4d97bbcdb6e978e03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.006
+    second: {fileID: 2100000, guid: 489c8eb550c1839488c5a35f05fc74bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.007
+    second: {fileID: 2100000, guid: 1b933688dec782648abcb572b9bdf6a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.008
+    second: {fileID: 2100000, guid: b1d24be574ef67a4eae6d03e3db34cdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.009
+    second: {fileID: 2100000, guid: ed8290b4000275444868823bcd17ce2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.010
+    second: {fileID: 2100000, guid: 0b8e27a61a4c52249ae62958b54863b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collumn Circular Type 1.011
+    second: {fileID: 2100000, guid: 590805ffc2f81624187a009a6ba1f151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2
+    second: {fileID: 2100000, guid: 0494964cdb2f02249ad09388152bf6db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.002
+    second: {fileID: 2100000, guid: fb00c66b47b341a488110dc68bbfd553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.003
+    second: {fileID: 2100000, guid: ac7ec28b59cd71144a316953195e2368, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.004
+    second: {fileID: 2100000, guid: eacd9d26b3229e947b27c7280b2bfb79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.005
+    second: {fileID: 2100000, guid: 7ff7204aafb501d468bf22c2cf94b454, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.006
+    second: {fileID: 2100000, guid: d868648cf42b8e340942d67e078e5812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.007
+    second: {fileID: 2100000, guid: 887cf1271b35221449df1b27bc2a175d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.008
+    second: {fileID: 2100000, guid: 0c74d6268c1161f44aad988ba3cc5796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.009
+    second: {fileID: 2100000, guid: 5b35ffdecde841a478428c345e27f7a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.010
+    second: {fileID: 2100000, guid: 78497a39559260a4da147a78f41c0030, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.011
+    second: {fileID: 2100000, guid: 49f2dc23f32eb914b9c4ac2eef38d363, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column Circular Cap Type 2.012
+    second: {fileID: 2100000, guid: b8df56e536557e94bab73debcd94077a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stylish ancient tiles checker
+    second: {fileID: 2100000, guid: 8f91fc81b6a07ca448ae3aa29d8c8804, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire
+    second: {fileID: 2100000, guid: 9a083e596c2208344b882cfed4cf09a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.001
+    second: {fileID: 2100000, guid: c68ce7d835e92ba4188aeb4eca7fb8a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.002
+    second: {fileID: 2100000, guid: 33c5ea07381dea2488489cb13d842663, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.003
+    second: {fileID: 2100000, guid: fdeff648eebe1dc468646c82ce92adf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.004
+    second: {fileID: 2100000, guid: 7f5f94c595b90d84e90d37d060435c84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.005
+    second: {fileID: 2100000, guid: cf8f0830ad9a50a4c8d64560d8b57bfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.007
+    second: {fileID: 2100000, guid: bd6160fe6ebf08b42aef690dd0b1e146, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire.008
+    second: {fileID: 2100000, guid: 9a14495a06c4bd743a544df876346676, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron
+    second: {fileID: 2100000, guid: a2b02e868d6a4234a815b835933d52f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.001
+    second: {fileID: 2100000, guid: 33323745e0f05204b8c7d415ed19a30d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.002
+    second: {fileID: 2100000, guid: c9c03e3349c6ae040a0447f269e8c309, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.003
+    second: {fileID: 2100000, guid: cd5b08e2db3068a47824550e1b48ea9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.005
+    second: {fileID: 2100000, guid: 61dc551d1025efa45b51ea46c8d31891, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.007
+    second: {fileID: 2100000, guid: 4ac6e0465a5359343bbee81a35adc006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rusted iron.008
+    second: {fileID: 2100000, guid: 60ae7da8b95e4e04287d59657dd19de1, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
