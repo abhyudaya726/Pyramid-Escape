@@ -6,64 +6,68 @@ public class SwordHitbox : MonoBehaviour
     [Header("Damage")]
     [SerializeField] private int damage = 25;
 
+    [Header("Hit Detection")]
+    [SerializeField] private float hitRadius = 0.7f;
+    [SerializeField] private LayerMask enemyLayer;
+
     private bool isActive;
 
     private HashSet<EnemyHealth> hitEnemies =
         new HashSet<EnemyHealth>();
 
-    private Collider hitboxCollider;
-
-    private void Awake()
-    {
-        hitboxCollider = GetComponent<Collider>();
-
-        if (hitboxCollider == null)
-        {
-            Debug.LogError("SwordHitbox: No Collider found!");
-            return;
-        }
-
-        hitboxCollider.isTrigger = true;
-        hitboxCollider.enabled = false;
-    }
-
     public void StartHit()
     {
+        // Already active, so don't reset the hit list.
+        if (isActive)
+            return;
+
         isActive = true;
         hitEnemies.Clear();
-
-        if (hitboxCollider != null)
-        {
-            hitboxCollider.enabled = true;
-        }
     }
 
     public void EndHit()
     {
         isActive = false;
-
-        if (hitboxCollider != null)
-        {
-            hitboxCollider.enabled = false;
-        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
         if (!isActive)
             return;
 
-        EnemyHealth enemy =
-            other.GetComponentInParent<EnemyHealth>();
+        CheckForEnemies();
+    }
 
-        if (enemy == null)
-            return;
+    private void CheckForEnemies()
+    {
+        Collider[] hits = Physics.OverlapSphere(
+            transform.position,
+            hitRadius,
+            enemyLayer
+        );
 
-        if (hitEnemies.Contains(enemy))
-            return;
+        foreach (Collider hit in hits)
+        {
+            EnemyHealth enemy =
+                hit.GetComponentInParent<EnemyHealth>();
 
-        hitEnemies.Add(enemy);
+            if (enemy == null)
+                continue;
 
-        enemy.TakeDamage(damage);
+            if (hitEnemies.Contains(enemy))
+                continue;
+
+            hitEnemies.Add(enemy);
+
+            enemy.TakeDamage(damage);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(
+            transform.position,
+            hitRadius
+        );
     }
 }
