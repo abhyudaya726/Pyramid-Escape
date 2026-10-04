@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -8,7 +7,6 @@ public class EnemyHealth : MonoBehaviour
 
     [Header("Health Bar")]
     [SerializeField] private RectTransform healthBarFill;
-
     [SerializeField] private float healthBarMaxWidth = 150f;
 
     private int currentHealth;
@@ -17,7 +15,6 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-
         UpdateHealthBar();
     }
 
@@ -55,6 +52,14 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         isDead = true;
+
+        EnemyKillCounter counter =
+            FindFirstObjectByType<EnemyKillCounter>();
+
+        if (counter != null)
+        {
+            counter.RegisterKill();
+        }
 
         gameObject.SetActive(false);
     }
