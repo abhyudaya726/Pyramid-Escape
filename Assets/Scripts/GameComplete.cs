@@ -1,8 +1,22 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using TMPro;
 
 public class GameComplete : MonoBehaviour
 {
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI gameCompleteText;
+
     private bool completed;
+
+    private void Start()
+    {
+        if (gameCompleteText != null)
+        {
+            gameCompleteText.gameObject.SetActive(false);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,15 +30,18 @@ public class GameComplete : MonoBehaviour
 
         Debug.Log("GAME COMPLETED!");
 
-        QuitGame();
+        if (gameCompleteText != null)
+        {
+            gameCompleteText.gameObject.SetActive(true);
+        }
+
+        StartCoroutine(LoadMainMenuAfterDelay());
     }
 
-    private void QuitGame()
+    private IEnumerator LoadMainMenuAfterDelay()
     {
-        Application.Quit();
+        yield return new WaitForSeconds(5f);
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        SceneManager.LoadScene("MainMenu");
     }
 }
